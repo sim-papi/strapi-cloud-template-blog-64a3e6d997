@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_causes",
+  "info": {
+    "displayName": "Cause",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "Rank": {
+      "type": "integer"
+    },
+    "probability": {
+      "type": "enumeration",
+      "enum": [
+        "high",
+        "medium",
+        "rare"
+      ]
+    },
+    "designation": {
+      "type": "string"
+    },
+    "detection": {
+      "type": "json"
+    },
+    "solution": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

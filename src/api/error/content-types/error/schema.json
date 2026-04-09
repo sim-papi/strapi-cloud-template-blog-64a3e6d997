@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "errors",
+  "info": {
+    "singularName": "error",
+    "pluralName": "errors",
+    "displayName": "Error"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "error_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "orientation_check": {
+      "type": "string"
+    },
+    "causes": {
+      "type": "component",
+      "component": "shared.cause",
+      "repeatable": true
+    },
+    "machines": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::machine.machine",
+      "inversedBy": "errors"
+    }
+  }
+}

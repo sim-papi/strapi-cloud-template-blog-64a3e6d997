@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "singularName": "machine",
+    "pluralName": "machines",
+    "displayName": "machine"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "machine_type": {
+      "type": "string",
+      "maxLength": 22
+    },
+    "errors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::error.error",
+      "mappedBy": "machines"
+    }
+  }
+}
