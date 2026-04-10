@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Rank": {
+    "rank": {
       "type": "integer"
     },
     "probability": {
