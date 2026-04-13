@@ -575,6 +575,7 @@ export interface ApiErrorError extends Struct.CollectionTypeSchema {
   };
   attributes: {
     causes: Schema.Attribute.Component<'shared.cause', true>;
+    comment: Schema.Attribute.String;
     condition: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -585,7 +586,9 @@ export interface ApiErrorError extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::error.error'> &
       Schema.Attribute.Private;
     machines: Schema.Attribute.Relation<'manyToMany', 'api::machine.machine'>;
+    prohibited_actions: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    technical_escalation: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -30,6 +30,15 @@
       "relation": "manyToMany",
       "target": "api::machine.machine",
       "inversedBy": "errors"
+    },
+    "prohibited_actions": {
+      "type": "string"
+    },
+    "technical_escalation": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
     }
   }
 }
