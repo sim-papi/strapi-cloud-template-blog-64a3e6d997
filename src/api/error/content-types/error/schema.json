@@ -17,7 +17,7 @@
     "description": {
       "type": "string"
     },
-    "orientation_check": {
+    "condition": {
       "type": "string"
     },
     "causes": {
