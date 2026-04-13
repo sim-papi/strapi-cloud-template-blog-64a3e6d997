@@ -9,6 +9,7 @@ export interface SharedCause extends Struct.ComponentSchema {
   attributes: {
     designation: Schema.Attribute.String;
     detection: Schema.Attribute.JSON;
+    estimated_time: Schema.Attribute.Integer;
     probability: Schema.Attribute.Enumeration<['high', 'medium', 'rare']>;
     rank: Schema.Attribute.Integer;
     solution: Schema.Attribute.JSON;

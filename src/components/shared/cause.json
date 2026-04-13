@@ -25,6 +25,9 @@
     },
     "solution": {
       "type": "json"
+    },
+    "estimated_time": {
+      "type": "integer"
     }
   },
   "config": {}
