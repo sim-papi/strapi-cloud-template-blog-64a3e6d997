@@ -20,14 +20,14 @@
     "designation": {
       "type": "string"
     },
-    "detection": {
-      "type": "json"
-    },
-    "solution": {
-      "type": "json"
-    },
     "estimated_time": {
       "type": "integer"
+    },
+    "detection": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
     }
   },
   "config": {}
